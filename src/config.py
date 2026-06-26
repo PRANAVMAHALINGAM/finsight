@@ -52,7 +52,7 @@ def get_llm():
     # llama3-70b-8192 = Llama 3 70B with 8192 token context window
     # 70B parameters makes it smart enough for financial reasoning
     return ChatGroq(
-        model="llama3-70b-8192",
+        model="llama-3.1-8b-instant",
         temperature=0,       # 0 = deterministic output (important for structured data)
         api_key=GROQ_API_KEY,
     )
